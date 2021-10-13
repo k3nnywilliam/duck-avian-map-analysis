@@ -2,3 +2,5 @@ data
 .ipynb_checkpoints
 */__pycache__/
 node_modules
+.env
+public/src/mytoken.js
