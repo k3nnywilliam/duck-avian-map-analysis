@@ -1,5 +1,7 @@
 ## Domestic ducks movement tracking
 
+![Alt text](image/map.jpg?raw=true "Title")
+
 This is a web-app demo using Movebank data and LeafletJS.
 
 #### Citation:
@@ -8,3 +10,7 @@ Choi C-Y, Takekawa JY, Yue X, Ying L, Wikelski M, Heine G, Prosser DJ, Newman SH
 
 #### Data source:
 https://www.movebank.org/cms/webapp?gwt_fragment=page=studies,path=study49520609
+
+
+### Attribution:
+ <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
