@@ -1,6 +1,6 @@
 ## Domestic ducks movement tracking
 
-![Alt text](image/map.jpg?raw=true "Title")
+![Alt text](image/map2.jpg?raw=true "Title")
 
 This is a web-app demo using Movebank data and LeafletJS.
 
