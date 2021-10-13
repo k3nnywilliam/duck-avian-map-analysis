@@ -45,21 +45,55 @@ L.control.watermark = function(opts) {
 L.control.watermark({ position: 'bottomleft' }).addTo(map); */
 
 
-var LeafIcon = L.Icon.extend({
+let LeafIcon = L.Icon.extend({
     options: {
+        shadowUrl: 'src/img/mallard-duck-shadow2.png',
         iconSize: [20, 20],
+        shadowSize:   [22, 22],
+        shadowAnchor: [22, 94],
         iconAnchor: [22, 94]
     }
 });
 
-var mallard = new LeafIcon({ iconUrl: 'src/img/mallard-duck.png' });
+let mallard = new LeafIcon({ iconUrl: 'src/img/mallard-duck2.png' });
+let muscovy = new LeafIcon({ iconUrl: 'src/img/muscovy2.png' });
+
+
+var linestyle = {
+    color: 'red',
+    weight: 5,
+    opacity: 0.6
+     }, 
+    stroke = {
+    color: "#fff",
+    weight: 7,
+    opacity: 0.4
+    };
+
+/* // create geolines
+L.geoJSON(geoFeaturesLines, {
+    pointToLayer: function (feature, latlng) {
+        return L.polyline(latlng, { linestyle });
+    }
+}).addTo(map);
+ */
+
+L.geoJSON(geoFeaturesLines, {
+    style: linestyle
+}).addTo(map);
+
 
 // custom duck marker
 L.geoJSON(geoFeaturePoints, {
     pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, { icon: mallard });
+        switch (feature.properties.individual) {
+            case 'Anas platyrhynchos': return L.marker(latlng, { icon: mallard });
+            case 'Cairina moschata':   return L.marker(latlng, { icon: muscovy });
+        }
     }
 }).addTo(map);
 
 
 map.addLayer(layer);
+
+//map.fitBounds(polyline.getBounds());
