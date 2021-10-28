@@ -1,0 +1,7 @@
+.mapbox-attribution-container {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+    margin: 0 10px 5px;
+  }
