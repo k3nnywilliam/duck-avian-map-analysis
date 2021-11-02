@@ -8,4 +8,10 @@ const CustomIcon = L.Icon.extend({
     }
 });
 
-export {CustomIcon};
+const markerOptions = {
+    showMarker: true,
+    removeOnEnd: false,
+
+}
+
+export default CustomIcon;
