@@ -7,7 +7,7 @@ const MapNavbar = () => {
     return (
         < Navbar bg="light" expand={false} >
             <Container fluid>
-                <Navbar.Brand href="#">Market Poultry Chain</Navbar.Brand>
+                <Navbar.Brand href="#">Market Poultry Chain (In the Context Avian Influenza Transmission)</Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
